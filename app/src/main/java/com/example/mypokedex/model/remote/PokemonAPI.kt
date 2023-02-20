@@ -15,11 +15,11 @@ interface PokemonAPI {
     suspend fun getPokedex(
         @Query("limit") limit: Int,
         @Query("offset") offset: Int
-    ): PokemonList
+    ): Response<PokemonList>
 
     @GET(END_POKEMON+"{name}")
     suspend fun getPokemon(
         @Path("name") name: String
-    ): Pokemon
+    ): Response<Pokemon>
 
 }

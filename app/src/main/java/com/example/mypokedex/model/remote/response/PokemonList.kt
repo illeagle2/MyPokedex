@@ -11,5 +11,5 @@ data class PokemonList(
     @SerializedName("previous")
     val previous: Any? = Any(),
     @SerializedName("results")
-    val results: List<Result?>? = listOf()
+    val results: List<Result>
 )
