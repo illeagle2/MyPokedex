@@ -2,6 +2,7 @@ package com.example.mypokedex.model.remote
 
 import com.example.mypokedex.model.remote.response.Pokemon
 import com.example.mypokedex.model.remote.response.PokemonList
+import com.example.mypokedex.model.remote.response.Sprites
 import com.example.mypokedex.utils.END_POKEMON
 import retrofit2.Response
 import retrofit2.http.GET

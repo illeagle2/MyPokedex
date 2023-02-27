@@ -3,6 +3,7 @@ package com.example.mypokedex.model.remote.response
 
 import com.google.gson.annotations.SerializedName
 
+
 data class Pokemon(
     @SerializedName("abilities")
     val abilities: List<Ability>? = listOf(),

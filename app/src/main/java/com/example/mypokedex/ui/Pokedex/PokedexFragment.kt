@@ -8,6 +8,8 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.mypokedex.databinding.FragmentPokedexBinding
+import com.example.mypokedex.model.remote.PokemonAPI
+import com.example.mypokedex.model.remote.PokemonRepository
 import com.example.mypokedex.model.remote.response.PokemonList
 import com.example.mypokedex.utils.Resource
 import dagger.hilt.android.AndroidEntryPoint
@@ -43,6 +45,7 @@ class PokedexFragment : Fragment() {
                 }
             }
             viewModel.getPokedexList()
+           //viewModel.loadPokemonPage()
         }
 
         return binding.root
